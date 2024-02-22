@@ -1,0 +1,321 @@
+<htmL>
+
+
+
+    <head>
+
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+    </head>
+
+
+    <body>
+
+
+
+        <div class="loading">
+
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+
+        </div>
+
+        <div class="nav position-fixed">
+
+            <div class="text-white px-3" id="options">
+                <ul class="list-unstyled py-5 px-4 ">
+                    <li class="search">Search</li>
+                    <li class="categories">Categories</li>
+                    <li class="area">Area</li>
+                    <li class="ingredients-anchor">Ingredients</li>
+                    <li class="contact">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="bg-white d-flex flex-column justify-content-between px-2 py-3 text-center" id="default">
+
+                <img src="images/logo.png" class="logo" alt="">
+
+                <i class=" icon fa-solid fa-align-justify fa-2x text-dark"></i>
+
+                <div>
+
+                    <i class="fa-solid fa-globe d-block mb-2"></i>
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container py-5 " id="latest-meal">
+            <div class="row  gy-3 gy-md-5 gx-md-5 " id="api-data">
+
+
+
+
+            </div>
+        </div>
+
+        <div class="container d-none py-md-5" id="show-meal">
+
+
+            <div class="row" id="instructions">
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="container d-none py-5" id="search-meal">
+
+
+            <div class="d-flex mb-5">
+
+                <input type="text"
+                    class=" search-name form-control w-50 mx-3 bg-transparent text-white border-top-0 border-end-0 border-start-0  text-center border-bottom-3 border-muted"
+                    placeholder="Enter by first name">
+
+                <input type="text"
+                    class=" search-letter form-control w-50 mx-3 bg-transparent text-white border-top-0 border-end-0 border-start-0  text-center border-bottom-3 border-muted"
+                    placeholder="Enter by letter">
+
+
+            </div>
+
+
+            <div class="row gy-4 gx-md-5 gy-md-5" id="search-meals">
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="container d-none py-5" id="categories-meal">
+            <div class="row gy-3 gy-md-5 gx-md-5 " id="show-categories">
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="container d-none py-5" id="categories-filter">
+
+
+
+
+
+            <div class="row gy-3  gx-md-5 gy-md-5" id="show-categories-filter">
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="container py-5 d-none" id="city-page">
+
+            <div class="row  gy-3  gx-md-5 gy-md-5" id="city-display">
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container d-none py-5" id="area-filter">
+
+            <div class="row  gy-3  gx-md-5 gy-md-5" id="show-area-filter">
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="container py-5 d-none" id="ingredient-page">
+
+            <div class="row  gy-3  gx-md-5 gy-md-5" id="ingredient-display">
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="container d-none py-5" id="ingredients-filter">
+
+            <div class="row  gy-3  gx-md-5 gy-md-5" id="show-ingredients-filter">
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <div class="w-50 mx-auto py-5 text-center d-none" id="contact">
+            <h2 class="mb-5 text-white">Contact Us</h2>
+
+            <div class="row mb-4 d-flex flex-wrap gx-5 gy-4">
+
+                <div class="form-group col-md-6 ">
+
+                    <input type="text"
+                        class="form-control text-center bg-transparent text-muted border-top-0 border-end-0 border-start-0 border border-muted mb-2 "
+                        placeholder="Enter Your Name " id="input-name">
+
+                    <p class="text-danger d-none" id="name-msg"> Special Characters and Numbers not allowed </p>
+
+                </div>
+
+                <div class="form-group col-md-6">
+
+
+                    <input type="text"
+                        class="form-control text-center bg-transparent text-muted border-top-0 border-end-0 border-start-0 border border-muted "
+                        placeholder="Enter Email" id="input-email">
+
+                    <p class="text-danger d-none" id="email-msg">Must contain @yahoo.com</p>
+
+
+                </div>
+
+
+
+                <div class="form-group col-md-6">
+
+
+
+                    <input type="text"
+                        class="form-control text-center bg-transparent text-muted border-top-0 border-end-0 border-start-0 border border-muted"
+                        placeholder="Enter Phone" id="input-phone">
+
+                    <p class="text-danger d-none" id="phone-msg">Enter a phone number</p>
+
+                </div>
+
+
+
+                <div class="form-group col-md-6">
+
+                    <input type="text"
+                        class="form-control text-center bg-transparent text-muted border-top-0 border-end-0 border-start-0 border border-muted"
+                        placeholder="Enter Age" id="input-age">
+
+                    <p class="text-danger d-none" id="age-msg">Enter a valid age</p>
+
+                </div>
+
+
+                <div class="form-group col-md-6">
+
+                    <input type="password"
+                        class="form-control text-center bg-transparent text-muted border-top-0 border-end-0 border-start-0 border border-muted"
+                        placeholder="Enter Password" id="input-password">
+
+                    <p class="text-danger d-none" id="pass-msg">Enter a valid password </p>
+
+                </div>
+
+
+
+                <div class="form-group col-md-6">
+
+                    <input type="password"
+                        class="form-control text-center bg-transparent text-muted border-top-0 border-end-0 border-start-0 border border-muted"
+                        placeholder="Enter Repassword" id="input-repassword">
+
+                    <p class="text-danger d-none" id="repass-msg">Enter a valid password </p>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="btn btn-outline-danger" type="submit" id="submit-button">Submit</button>
+
+
+        </div>
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+
+</htmL>
